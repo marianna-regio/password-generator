@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+
+body {
+    background-color: #18181b;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.logo {
+    max-width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.container-input {
+    max-width: 20rem;
+    margin: 14px 0;
+}
+
+.container-input span {
+    color: #fff;
+    font-size: 17px;    
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: .3rem;
+    background: #aca5a5;
+    height: 1rem;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta {
+    height: 2rem;
+    background-color: #2d881f;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container-password {
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-content: center;
+    margin: 14px 0;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.password {
+    text-align: center;
+    margin-bottom: .75rem;
+    background-color: #00000041;
+    color: #8f8888;
+    padding-bottom: .2rem;
+    border-radius: 4px;
+    border: 1px solid #8f8888;
+    transition: .5s;
+}
+
+.password:hover{
+    transform: scale(1.05);
+}
+
+.tooltipe {
+    color: #fff;
+    top: 20px;
+    text-align: center;
+    background: rgba(15, 15, 15, 0.412);
+    position: relative;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: all 0.5s ease-in-out;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltipe {
+    visibility: visible;
+    opacity: 1;
+}
